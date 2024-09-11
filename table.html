@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head=>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tables</title>
+
+        <!--creating a basic html table properties in the style element of the head section-->
+        <style>
+            table, th, td{
+                border:1px solid black;
+                border-collapse: collapse;
+            }
+            td{
+                padding: 10px;
+                border-spacing: 100px;
+            }
+        </style>
+        <style>
+            body {
+                background-color: whitesmoke;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        </style>
+        <style>
+            div.mycontainer {
+                width: 100%;
+                overflow: auto;
+            }
+            div.mycontainer div {
+                width: 33%;
+                float: left;
+        }
+            div {
+                width: 30%;
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1><center>A SIMPLE TABLE SAMPLE IN HTML</center></HTML></h1>
+        <!--now creating the table for horizontal table heads-->
+        <!--to create a vertical table heads, define the first cells in each row as "th" and the rest as "td"-->
+        <!--you can have a caption that serves as a heading for the entire table by using the <caption></caption>-->
+
+        <table style="width: 100%">
+            <colgroup>
+                <col span="2" style="background-color: #b92121;">
+                <col span="3" style="background-color: hsl(138, 70%, 43%);">
+            </colgroup>
+            <h2>Colgroup</h2>
+            <p>Add the colgroup wih a col element that spans over two columns to define a style for two columns:</p>
+            <tr>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14 </td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+            </tr>
+        </table>
+        <hr>
+        <div style="background-color: #b92121;">
+            <h2>Month</h2>
+            <p>12 months combine to make a complete year, some months have longer days than others.</p>
+            <p>february have 28 or 29 days, April, June, September and November have 30 days each.</p>
+            <p>the remaining 7 months have 31 days each like the exmple above.</p>
+        </div>
+        <div style="background-color: green;">
+            <h2>Weeks</h2>
+            <p>4 weeks combine to make a complete Month.</p>
+            <p>each week have 7 days from Monday to Sunday.</p>
+            <p>altogether, we have 56 weeks in a year.</p>
+        </div>
+        <div style="background-color:whitesmoke;">
+            <h2>Days</h2>
+            <p>in a week we have 5 working days and 2 weekends.</p>
+            <p>From Monday to Friday we work, and Sunday and Saturday we relax to work on other things.</p>
+        </div>
+    </body>
+</html>

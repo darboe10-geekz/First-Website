@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/BaSankung/.vscode/First%20Website/list.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Lists</title>
+        <style>
+            body {
+                background-color: whitesmoke;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        </style>
+        <style>
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #37ac9c;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+            li {
+                float: left;
+            }
+            li a:hover {
+                background-color: #111111;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><center>A SIMPLE lIST SAMPLE IN HTML5</center></h1>
+        <!--ordered list and unordered list in html. first example is a normal list-->
+        <!--ordered list starts with <OL> tag instead of the <UL> tag-->
+        <ul style="list-style: square;">
+            <li>Basankung</li>
+            <li>Musa</li>
+            <li>Bakz</li>
+            <li>Ahmad</li>
+            <li>Modou</li>
+        </ul>
+        <br>
+        <!--ordered list and unordered list in html. second example is a normal nested list-->
+        <ul>
+            <li>first semester courses</li>
+                <ul>
+                    <li>java 1</li>
+                    <li>java 2</li>
+                    <li>python</li>
+                </ul>
+            <li>second semester courses</li>
+            <li>third semester courses</li>
+            <li>fouth semester courses</li>
+                <ul>
+                    <li>machine learning</li>
+                    <li>compiler design</li>
+                    <li>internet of things</li>
+                </ul>
+            <li>fifth semester courses</li>
+        </ul>
+        <br>
+        <!--using a horizontal list with CSS to display a creative navigation menu-->
+        <ul>
+            <li><a href="file:///C:/Users/BaSankung/.vscode/First%20Website/list.html#home">Home</a></li>
+            <li><a href="file:///C:/Users/BaSankung/.vscode/First%20Website/list.html#news">News</a></li>
+            <li><a href="file:///C:/Users/BaSankung/.vscode/First%20Website/list.html#contact">Contact</a></li>
+            <li><a href="file:///C:/Users/BaSankung/.vscode/First%20Website/list.html#about">About</a></li>
+        </ul>
+        <br>
+        <!--by default the brower will use bullet points as list and thus, this can be changed using the <type> tag-->
+        <!--'a' for lower letter numberings, 'A' for upper case, 'i' for lower romans, 'I' for upper case roman-->
+        <!--by default the numberings starts at 1, to change this, use the <start> tag and choose your starting number-->
+        <!--HTML also supports description lists, a description list is a list of terms, with a descriptioin of each term-->
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- Black hot Coffee</dd>
+            <dt>Milk</dt>
+            <dd>- White cold Milk</dd>
+        </dl>
+    
+</body></html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Class</title>
+        <style>
+            .city {
+                background-color: aqua;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+        <style>
+            .main {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2><center>Multiple Classes in HTML5</center></h2>
+        <P>Here, all three h2 elements belongs to the "city" class.
+            in addition, Banjul also belongs to the "main" class, which center align the text.
+        </P>
+        <h2 class="city main">Banjul</h2>
+        <h2 class="city">Kanifing</right></h2>
+        <h2 class="city">Tanji</h2>
+
+        <h2>In this example we use class attribute in javascript</h2>
+        <p>Click the button to hie all the elements with class name "city":</p>
+        <button onclick="myFunction()">Hide elements</button>
+
+        <h2 class="city">London</h2>
+        <p>London is the capital of England.</p>
+
+        <h2 class="city">Paris</h2>
+        <p>Paris is the capital of France.</p>
+
+        <h2 class="city">Banjul</h2>
+        <p>Banjul is the capital of Gambia.</p>
+
+        <script>
+        function myFunction() {
+            var x =
+        document.getElementsByClassName("city");
+            for (var i =0= 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IMAGES</title>
+        <style>
+            body {
+                background-color: whitesmoke;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        </style>
+        <!--to add a favicon to the webpage-->
+        <link rel="icon" type="image/x-icon"
+        href="images/float.x-icon">
+    </head>
+    <body>
+        <h1><center>HOW TO SHOW IMAGES IN WEBPAGES IN HTML</center></h1>
+        <!--to insert an image-->
+        <img src="image/Screenshot.png" width="200" height="200">
+        <br>
+        <hr>
+        <!--to create a link-->
+        <a href="https://www.basankung.com">Visit my site</a>
+        <hr>
+        <!--to use an image as a link-->
+        <a href="default.asp">
+            <img src="image/smiling basankung.jpg" alt="a smilling handsome basankung" style="width: 100; height: 100;"></a>
+        <br>
+        <!--to use an image floating on the web page right or left-->
+        <p><img src="image/float.png" alt="a floating image" style="float: right; width: 200px; height: 200px;">This image will
+            float to the right of the text
+        </p>
+        <br>
+        <!--the html picture element allows you to display different pictures for different devices or screen types-->
+        <!--it is used a s containter for multiple image sources-->
+        <picture>
+            <source media="(min-width: 650px)"
+            srcset="float.jpg">
+            <source media="(min-width: 465px)"
+            srcset="smile.png">
+            <img src="image/screenshot.png">
+        </picture>
+        <br>
+    </body>
+</hhml>
