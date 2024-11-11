@@ -1,2 +1,3 @@
 # First-Website
 all great coders start with a first project here is mine.
+i started my university education at the university of the gambia in the year 2019. i got a lot of good friend that stood by me the entire time in uni. we have a great bond and we shared a lot of ideas and ways forward for whatever task we have on our backs. out team was name geekz. we are 6 in number but its only 4 of us who are serious. sankung, ahmad, bakz, and victor. but musa and modou are not very serious
