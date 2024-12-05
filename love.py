@@ -15,7 +15,7 @@ def corazon(n):
 
 t.penup ()
 for i in range(15):
-    # t.goto(0, 0)
+    t.goto(0, 0)
     t.pendown()
     for n in range(0, 100, 2):
         x, y = corazon(n/10)
