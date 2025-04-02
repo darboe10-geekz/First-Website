@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0060)file:///C:/Users/BaSankung/.vscode/First%20Website/list.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Lists</title>
+<title>Lists</title>
         <style>
             body {
-                background-color: whitesmoke;
+                background-color:antiquewhite;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
@@ -12,9 +12,9 @@
         </style>
         <style>
             ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+            list-style-type:lower-alpha;
+            margin: 10px;
+            padding: 10px;
             overflow: hidden;
             background-color: #37ac9c;
             }
@@ -27,6 +27,8 @@
             }
             li {
                 float: left;
+                position: relative;
+                line-break: normal;
             }
             li a:hover {
                 background-color: #111111;
@@ -54,20 +56,30 @@
         </ol>
         <br>
         <!--ordered list and unordered list in html. second example is a normal nested list-->
-        <ul>
-            <li>first semester courses</li><br>
-                <ul>
-                    <li>java 1</li><br>
-                    <li>java 2</li><br>
-                    <li>python</li><br>
-                </ul>
-            <li>second semester courses</li>
-            <li>third semester courses</li>
+        
+        <dl>
+            <dt>first semester courses</dt>
+            <dd>- java 1</dd>
+            <dd>- java 2</dd>
+            <dd>- python</dd>
+        </dl> 
+        <dl>
+            <dt>second semester courses</dt>
+            <dd>- data structures</dd>
+            <dd>- ethics</dd>
+            <dd>- computing</dd>
+        </dl>   
+        <dl>
+            <dt>third semester courses</dt>
+            <dd>- machine learning</dd>
+            <dd>- compiler design</dd>
+            <dd>- internet of things</dd>
+        </dl>        
             <li>fouth semester courses</li>
                 <ul>
-                    <li>machine learning</li>
-                    <li>compiler design</li>
-                    <li>internet of things</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
             <li>fifth semester courses</li>
         </ul>
