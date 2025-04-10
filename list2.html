@@ -8,37 +8,62 @@
         div {
             width: 300px;
             margin: auto;
-            background-color: blueviolet;
+            background-color: none;
+            display: inline;
         }
+    </style>
+    <style>
+        ul {
+            margin: 10px;
+            padding: 10px;
+            overflow: hidden;
+            background-color:none;
+        }
+    </style>
+    <style>
+    .mycontainer {
+      display: flex;
+    }
+    .mycontainer > div {
+      width:300%;
+    }
     </style>
 </head>
 <body>
     <!--unordered list and unordered list in html. second example is a normal nested list-->  
-    <ul >
-        <li>first semester courses</li>
-            <ul>
-                 <li>java 1</li>
-                <li>java 2</li>
-                <li>python</li>
-            </ul>
-    </ul> 
-    <ul>
-        <li>second semester courses</li>
-            <ul>
-                <li>data structures</dd>
-                <li>ethics</li>
-                <li>computing</li>
-            </ul>     
-    </ul>   
-    <ul>
-        <li>third semester courses</li>
-            <ul>
-                <li>machine learning</li>
-                <li>compiler design</li>
-                <li>internet of things</li>
-            </ul>   
-    </ul>
-    <ul >       
+  <div class="mycontainer">
+    <div style="background-color:#FFF4A3;">
+        <ul >
+            <li>first semester courses</li>
+                <ul>
+                     <li>java 1</li>
+                    <li>java 2</li>
+                    <li>python</li>
+                </ul>
+        </ul> 
+    </div>
+    <div style="background-color:#FFC0C7;"> 
+        <ul>
+            <li>second semester courses</li>
+                <ul>
+                    <li>data structures</dd>
+                    <li>ethics</li>
+                    <li>computing</li>
+                </ul>     
+        </ul>   
+    </div>
+    <div style="background-color:#D9EEE1;">
+        <ul>
+            <li>third semester courses</li>
+                <ul>
+                    <li>machine learning</li>
+                    <li>compiler design</li>
+                    <li>internet of things</li>
+                </ul>   
+        </ul>
+    </div>
+  </div>
+    <ul style="background-color: turquoise;">       
         <li>fouth semester courses</li>
             <ul>
                 <li>project management</li>
@@ -46,18 +71,6 @@
                 <li>security scripting</li>
             </ul>
     </ul>
-    <div>
-        <ul>
-            <li>Coffee</li>
-            <li>Tea
-              <ul>
-                <li>Black tea</li>
-                <li>Green tea</li>
-              </ul>
-            </li>
-            <li>Milk</li>
-        </ul>
-    </div>
     <ul style="background-color: turquoise;">
         <li>Coffee</li>
         <li>Tea</li>
