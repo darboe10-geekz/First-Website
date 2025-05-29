@@ -1,0 +1,308 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to right bottom, rgba(11, 14, 19, 0.9), rgba(11, 14, 19, 0.9));
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Navbar Styling */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    margin-top: 20px;
+    width: 50vw;
+    background: linear-gradient(90deg, #354950, #0b0e13);
+    padding: 15px 0;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ffffff;
+    color: #0b0e13;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    height: 100vh;
+    /* background: linear-gradient(to right bottom, rgba(11, 14, 19, 0.9), rgba(11, 14, 19, 0.9)), 
+                url('images/CodeBoy.jpg') no-repeat center center/cover; */
+}
+
+.hero-text {
+    max-width: 50%;
+    flex-basis: 65%;
+}
+
+.hero-text .icons {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 20px;
+}
+
+.hero-text .icons a {
+    color: #ffffff;
+    font-size: 28px;
+    background-color: #0b0e13;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.hero-text .icons a:hover {
+    color: #0bb0e5;
+}
+
+#hero image {
+    flex-basis: 35%;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    color: #0bb0e5;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+.download-btn {
+    background-color: #0bb0e5;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* About Section Styling */
+#about {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0b0e13, #1a1d24);
+    padding: 60px 20px;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-text {
+    max-width: 50%;
+    flex-basis: 65%;
+}
+
+#about .about-image {
+    flex-basis: 35%;
+}
+
+
+
+.about-text h2 {
+    color: #0bb0e5;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Skills Section Styling */
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0b0e13, #1a1d24);
+    padding: 60px 20px;
+}
+
+
+#skills .skills-text ul{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+
+#skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#skills .skills-text ul li i {
+   
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 50px;
+    grid-column: span 1;
+    /* align-items: center; */
+}
+
+.skills-text h2 {
+    color: #0bb0e5;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.skills-text ul {
+    list-style: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.skills-text ul li {
+    margin-bottom: 10px;
+}
+
+/* Projects Section Styling */
+.projects {
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #0b0e13, #1a1d24);
+}
+
+.projects-text h2 {
+    color: #0bb0e5;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project {
+    background-color: #1a1d24;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: #0bb0e5;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.project p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Contact Section Styling */
+.contact {
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #1a1d24, #0b0e13);
+}
+
+.contact-text h2 {
+    color: #0bb0e5;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1a1d24;
+    color: #ffffff;
+}
+
+form button {
+    padding: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #0bb0e5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #097bba;
+}
+/* footer Section Styling */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #149de7;
+}
