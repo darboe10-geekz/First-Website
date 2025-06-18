@@ -26,6 +26,9 @@ class CustomUserCreationForm(forms.ModelForm):
     
 class CustomUserChangeForm(forms.ModelForm):
     password = ReadOnlyPasswordHashField(label="Password", help_text="You can change the password using <a href=\"../password/\">this form</a>.")
+    # password = forms.CharField(label='Password', widget=forms.PasswordInput, required=False)
+    is_active = forms.BooleanField(required=False)
+    is_staff = forms.BooleanField(required=False)
     
     class Meta:
         model = CustomUser
