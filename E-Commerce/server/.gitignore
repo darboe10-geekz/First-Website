@@ -1,0 +1,16 @@
+*/venv
+venv/*
+*.pyc
+__pycache__/
+*.log
+*.pot
+*.mo
+local_settings.py
+db.sqlite3
+media/
+*.sqlite3
+*.pyo
+*.pyd
+*.db
+.DS_Store
+
