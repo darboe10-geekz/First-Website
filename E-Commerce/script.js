@@ -81,6 +81,9 @@ function displayProducts() {
     });
 }
 
+
+
+
 // Add to cart
 function addToCart(productId) {
     const product = products.find(p => p.id === productId);
@@ -172,7 +175,7 @@ function checkout() {
     }
     
     // In a real app, you would redirect to a checkout page or process payment here
-    alert(Checkout complete! Total: $${cartTotal.textContent});
+    alert(`Checkout complete! Total: $${cartTotal.textContent}`);
     cart = [];
     updateCart();
     closeCartModal();
@@ -187,6 +190,7 @@ function openCartModal() {
 function closeCartModal() {
     cartModal.style.display = 'none';
 }
+
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
