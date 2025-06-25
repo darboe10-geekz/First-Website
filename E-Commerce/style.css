@@ -57,8 +57,11 @@ header .container {
 }
 
 nav ul {
-    display: flex;
+    display:flex;
     list-style: none;
+    font-size: 20px;
+    text-align:left;
+
 }
 
 nav ul li {
@@ -222,32 +225,6 @@ nav ul li a:hover {
     padding: 80px 0;
 }
 
-.contact h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 36px;
-}
-
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: grid;
-    gap: 20px;
-}
-
-#contact-form input,
-#contact-form textarea {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#contact-form textarea {
-    height: 150px;
-    resize: vertical;
-}
-
 /* Footer */
 footer {
     background: #333;
@@ -267,10 +244,12 @@ footer .container {
 }
 
 .social-links a {
+    display: inline-block;
     color: white;
     margin: 0 10px;
     font-size: 20px;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 .social-links a:hover {
