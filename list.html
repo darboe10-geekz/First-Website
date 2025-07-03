@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)file:///C:/Users/BaSankung/.vscode/First%20Website/list.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Lists</title>
+        <!-- saved from url=(0060)file:///C:/Users/BaSankung/.vscode/First%20Website/list.html -->
+        <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <link rel="icon" type="image/x-icon" href="image\listcon.jpg">
+       <title>List</title>
         <style>
             body {
                 background-color:antiquewhite;
@@ -17,6 +18,27 @@
             padding: 10px;
             overflow: hidden;
             background:turquoise;
+            }
+
+            ol.a{
+                list-style-type: lower-roman;
+                margin: 10px;
+                padding: 10px;
+                background:rgb(27, 234, 27);
+            }
+
+            ol.b {
+                list-style-type: lower-alpha;
+                margin: 10px;
+                padding: 10px;
+                background:rgb(210, 171, 16);
+            }
+
+            dd {
+                font-weight: bold;
+                margin: 10px;
+                padding: 10px;
+                background:rgb(210, 16, 191);
             }
             li a {
                 display: block;
@@ -34,20 +56,13 @@
                 background-color: #111111;
             }
         </style>
-          <!--using a horizontal list with CSS to display a creative navigation menu-->
-        <ul>
-            <li><a href="file:///C:/Users/BaSankung/.vscode/First%20Website/list.html#home">Home</a></li>
-            <li><a href="file:///C:/Users/BaSankung/.vscode/First%20Website/list.html#news">News</a></li>
-            <li><a href="file:///C:/Users/BaSankung/.vscode/First%20Website/list.html#contact">Contact</a></li>
-            <li><a href="file:///C:/Users/BaSankung/.vscode/First%20Website/list.html#about">About</a></li>
-        </ul>
-        <br>
+        <meta charset="UTF-8">
     </head>
     <body>
         <h1><center>A SIMPLE lIST SAMPLE IN HTML5</center></h1>
         <!--ordered list and unordered list in html. first example is a normal list-->
         <!--ordered list starts with <OL> tag instead of the <UL> tag-->
-        <ol style="list-style: circle;">
+        <ol class="a">
             <li>Basankung</li><br>
             <li>Musa</li><br>
             <li>Bakz</li><br>
@@ -55,7 +70,13 @@
             <li>Modou</li><br>
         </ol>
         <br>
-      
+         <ol class="b">
+            <li>Geekz Darboe</li><br>
+            <li>Geekz Makalo</li><br>
+            <li>Geekz Fatty</li><br>
+            <li>Geekz Marong</li><br>
+            <li>Geekz Jallow</li><br>
+        </ol>
         <br>
       
         <!--by default the brower will use bullet points as list and thus, this can be changed using the <type> tag-->
