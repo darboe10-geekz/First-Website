@@ -2,11 +2,11 @@ import oracledb
 
 # 1. Connect
 connection = oracledb.connect(
-    user="system",
-    password="da",
-    dsn="localhost:1521/orcl" # host:port/service_name
+    user="SYS",
+    password="P@ssw01d",
+    dsn="localhost:1521/orcl", # host:port/service_name
+    mode=oracledb.AUTH_MODE_SYSDBA
 )
-
 # 2. Create cursor
 cursor = connection.cursor()
 

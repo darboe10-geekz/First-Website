@@ -1,5 +1,5 @@
 --create
-CREATE TABLE PROJECTS (
+CREATE TABLE PROJECT (
     project_id NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     project_name VARCHAR2(100) NOT NULL,
     start_date DATE DEFAULT SYSDATE
@@ -12,7 +12,7 @@ commit;
 
 --insert in proeject table
 INSERT INTO PROJECT (PROJECT.PROJECT_NAME) 
-VALUES ('Database Development Project');
+VALUES ('HTML Project');
 commit;
 
 
@@ -87,3 +87,16 @@ GROUP BY
         ELSE 'Pending'
     END;
 commit;
+
+--Truncate drop the entire data in a table but retain the table.
+TRUNCATE TABLE Project;
+
+--counting the number of projects in the projet table
+SELECT COUNT(*) AS Total_Geekz
+FROM TEAM_GEEKZ;
+
+--count Geekz with at least one project
+SELECT COUNT(DISTINCT TEAM_GEEKZ.MEMBER_ID) AS Geekz_With_Project
+FROM TEAM_GEEKZ
+INNER JOIN PROJECT 
+ON TEAM_GEEKZ.MEMBER_ID = PROJECT.PROJECT_ID;
